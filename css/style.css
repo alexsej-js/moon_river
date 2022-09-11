@@ -1,0 +1,1062 @@
+html {
+    box-sizing: border-box;
+}
+*
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+h1
+h2
+h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Futura PT Bold';
+	src: url('../fonts/futura_pt_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_bold.svg#futura_pt_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Bold Oblique';
+	src: url('../fonts/futura_pt_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_bold_oblique.svg#futura_pt_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Book';
+	src: url('../fonts/futura_pt_book.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_book.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_book.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_book.svg#futura_pt_book') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Book Oblique';
+	src: url('../fonts/futura_pt_book_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_book_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_book_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_book_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_book_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_book_oblique.svg#futura_pt_book_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Bold';
+	src: url('../fonts/futura_pt_cond_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_bold.svg#futura_pt_cond_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Bold Oblique';
+	src: url('../fonts/futura_pt_cond_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_bold_oblique.svg#futura_pt_cond_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Book';
+	src: url('../fonts/futura_pt_cond_book.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_book.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_book.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_book.svg#futura_pt_cond_book') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Book Oblique';
+	src: url('../fonts/futura_pt_cond_book_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_book_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_book_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_book_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_book_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_book_oblique.svg#futura_pt_cond_book_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Extra Bold';
+	src: url('../fonts/futura_pt_cond_extra_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_extra_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_extra_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_extra_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_extra_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_extra_bold.svg#futura_pt_cond_extra_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Extra Bold Oblique';
+	src: url('../fonts/futura_pt_cond_extra_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_extra_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_extra_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_extra_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_extra_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_extra_bold_oblique.svg#futura_pt_cond_extra_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Medium';
+	src: url('../fonts/futura_pt_cond_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_medium.svg#futura_pt_cond_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Cond Medium Oblique';
+	src: url('../fonts/futura_pt_cond_medium_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_cond_medium_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_cond_medium_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_cond_medium_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_cond_medium_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_cond_medium_oblique.svg#futura_pt_cond_medium_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Demi';
+	src: url('../fonts/futura_pt_demi.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_demi.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_demi.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_demi.svg#futura_pt_demi') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Demi Oblique';
+	src: url('../fonts/futura_pt_demi_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_demi_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_demi_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_demi_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_demi_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_demi_oblique.svg#futura_pt_demi_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Extra Bold';
+	src: url('../fonts/futura_pt_extra_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_extra_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_extra_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_extra_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_extra_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_extra_bold.svg#futura_pt_extra_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Extra Bold Oblique';
+	src: url('../fonts/futura_pt_extra_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_extra_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_extra_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_extra_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_extra_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_extra_bold_oblique.svg#futura_pt_extra_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Heavy';
+	src: url('../fonts/futura_pt_heavy.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_heavy.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_heavy.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_heavy.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_heavy.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_heavy.svg#futura_pt_heavy') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Heavy Oblique';
+	src: url('../fonts/futura_pt_heavy_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_heavy_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_heavy_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_heavy_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_heavy_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_heavy_oblique.svg#futura_pt_heavy_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Light';
+	src: url('../fonts/futura_pt_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_light.svg#futura_pt_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Light Oblique';
+	src: url('../fonts/futura_pt_light_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_light_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_light_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_light_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_light_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_light_oblique.svg#futura_pt_light_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Medium';
+	src: url('../fonts/futura_pt_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_medium.svg#futura_pt_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Medium Oblique';
+	src: url('../fonts/futura_pt_medium_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_medium_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_medium_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_medium_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_medium_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_medium_oblique.svg#futura_pt_medium_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.flex {
+    display: flex;
+}
+.site-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+body.lock {
+    overflow: hidden;
+}
+body {
+    margin: auto;
+}
+/* header-tel */
+.header-tel {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background-color: #272727 ;
+    height: 100%;
+    transition: left 0.5s ease-in-out 0s;
+    overflow: auto;
+    z-index: 15;
+}
+.header-tel.active {
+    left: 0;
+}
+.tabs {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tabs__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #2F2F2F;
+}
+.tabs__item-paragraf {
+    margin-bottom: 30px;
+}
+.tabs__items {
+    width: 25%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+   
+}
+.tabs-list {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    transition: color 0.5s ease 0.2ms;
+    cursor: pointer;
+}
+.tabs-list:hover {
+    color: #f7cb0a;
+}
+.tabs__nav-btn {
+    background-color: #2F2F2F;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 35px 0;
+    transition: all 0.7s ease 0s;
+}
+
+.tabs__nav-btn:last-child {
+    border-right: none;
+}
+
+.tabs__nav-btn:hover {
+    background-color:#2F2F2F;
+
+}
+
+.tabs__nav-btn.active {
+    border: none;
+    border-bottom: 0.5px solid #f7cb0a;
+}
+
+.tabs__content {
+    padding: 30px;
+    color: #FFFFFF;
+    background-color:  #272727;
+    width: 90%;
+    min-height: 300px;
+}
+
+.tabs__item {
+    display: none;
+    width: 70%;
+}
+.tabs__item-list {
+    width: 100%;
+    justify-content: space-around;
+}
+.tabs__item.active {
+    display: block;
+}
+.hedear-tel__content {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    min-height: 300px;
+}
+.header-tel__foto {
+    width: 70%;
+    min-height: 268px;
+    background-image: url(../img/mercuri.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-tel__link {
+    margin: 0 auto;
+    padding-left: 15px;
+}
+.header-tel__phone-link {
+    flex-direction: column;
+}
+.header-tel__contact {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.header-tel-item-link {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #C2C2C2;
+}
+.hedear-tel-desc {
+    font-family: 'Futura PT LightFutura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header-tel__network {
+    margin-bottom: 48px;
+}
+/* header */
+.header {
+    min-height: 85px;
+    align-items: center;
+    /* background: rgb(100, 100, 100); */
+}
+.header-logo {
+    width: 70%;
+    background-color: inherit;
+    
+}
+.header-burger1 {
+    position: fixed;
+    top: 26px;
+    left: 95%;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.header-burger2 {
+    position: fixed;
+    top: 20px;
+    left: 95%;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.header-burger3 {
+    position: fixed;
+    top: 32px;
+    left: 95%;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+     padding: 0 5px;
+}
+.header-nav {
+    z-index: 15;
+    padding: 35px;
+    position: relative;
+    background-color: none;
+    justify-content: flex-end;
+    transition: all 0.3s ease 0s;
+}
+.header-nav .active {
+    background-color: #f7cb0a;
+}
+.header-container__black {
+    width: 30%;
+    background-color: #272727;
+    padding: 30px 0;
+    justify-content: flex-end;
+}
+/* main-content */
+.main-content {
+    margin-bottom: 20px;
+   
+}
+.main-content__left {
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    min-height: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.main-content__right {
+    width: 30%;
+    background-color: #272727;
+    min-height: 600px;
+   justify-content: center;
+}
+.main-content__left-desc {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 71px;
+    
+    letter-spacing: 0.03em;
+    color: #272727;
+}
+.main-content__left-span {
+    display: inline-block;
+    width: 130px;
+    height: 2px;
+    background-color: #272727;
+    margin-right: 10px;
+}
+.main-content__left-colection {
+        font-family: 'Segoe UI';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+       
+        color: #272727;
+}
+.img-ring {
+    display: flex;
+    position: sticky;
+    left: 75%;
+    right: -150px;
+    background: inherit;
+    width: 322px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.main-content__right-desc {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.ring-cartie {
+    margin-bottom: 9px;
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.ring-cartie__desc {
+    margin-bottom: 9px;
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #C2C2C2;
+}
+.ring-cartie__price {
+    margin-bottom: 9px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #EFC58B;
+}
+/* collection */
+.colection {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.colection-men {
+    width: 49.5%;
+    min-height: 578px;
+    background-image: url(../img/formen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.colection-woomen {
+    width: 49.5%;
+    min-height: 578px;
+    background-image: url(../img/forwoomen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.go-colection {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.for {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 71px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+    cursor: pointer;
+}
+.borders {
+    width: 130px;
+    height: 1px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.map-container {
+    margin-bottom: 20px;
+}
+.map-container__desc {
+    width: 50%;
+    min-height: 600px;
+    background-color: #272727;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.map-container__maps {
+    width: 51%;
+    min-height: 600px;
+    background-image: url(../img/Mask\ Group.png);
+}
+.map-container__description {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.map-container__description-1 {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+/* catalog */
+.catalog {
+    width: 100%;
+    min-height: 820px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.catalog-left {
+    width: 30%;
+    min-height: 820px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.catalog-center {
+    width: 38%;
+    min-height: 820px;
+    background-image: url(../img/card-center.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.catalog-right {
+    width: 30%;
+    min-height: 820px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.catalog-card {
+    width: 100%;
+    min-height: 400px;
+    background-color: #EDEDED;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.catalog-left__description-1 {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #272727;
+    margin-bottom: 9px;
+}
+.catalog-left__description-2 {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #757575;
+}
+.catalog-price {
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #E2B67A;
+}
+/* slide-container */
+.slide-container {
+    z-index: 0;
+    min-height: 880px;
+    background-color: #272727;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.swiper {
+    width: 100%;
+    height: 385px;
+  }
+.swiper-container {
+    width: 100%;
+}
+.swiper-wrapper {
+    width: 100%;
+}
+.swiper-slide {
+   width: auto;
+}
+.card1 {
+    min-height: 385px; 
+    background-image: url(../img/slid1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card2 {
+    min-height: 385px;
+    background-image: url(../img/slide2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card3 {
+    min-height: 385px;
+    background-image: url(../img/slide3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card4 {
+    min-height: 385px;
+    background-image: url(../img/slide4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card5 {
+    min-height: 385px;
+    background-image: url(../img/slide5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card6 {
+    min-height: 385px;
+    background-image: url(../img/slide6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card7 {
+    min-height: 385px;
+    background-image: url(../img/slide7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card8 {
+    min-height: 385px;
+    background-image: url(../img/slide8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.swiper-pagination {
+    position: static;
+    height: 10px;
+    margin-top: -2px;
+}
+.swiper-pagination-bullet {
+    background-color: #FFFFFF;
+    width: 8px;
+    height: 8px;
+    margin: 0 17px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+.slider-top {
+    width: 75%;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-start;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.slider-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+.slider-network {
+    align-items: center;
+}
+.slider-network__link {
+    margin-left: 20px;
+    margin-top: -18px;
+}
+.slider-butons {
+    display: flex;
+    align-items: flex-start;
+}
+.swiper-button-prev {
+    display: flex;
+    position: static;
+    padding: 15px;
+    width: 51px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 51px 30px;
+    background-position: center;
+    background-image: url(../img/prev.png);
+}
+.swiper-button-next {
+    display: flex;
+    position: static;
+    padding: 15px;
+    width: 51px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 51px 30px;
+    background-position: center center;
+    background-image: url(../img/next.png);
+}
+/* flagman-shop */
+.flagman-shop__img {
+    width: 50%;
+    min-height: 640px;
+    background-image: url(../img/flagman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flagman-shop__desc {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.flagman-shop__tel {
+    flex-direction: column;
+    
+}
+.tel-mail-desc {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #272727;
+    margin-bottom: 30px;
+}
+.contacts-item-link {
+    margin-bottom: 110px;
+}
+.flagman-shop__imput {
+    width: 100%;
+    border: none;
+}
+.form-link__mail {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1.8px solid #272727;
+}
+.header-tel__imput {
+    border: none;
+    background-color: inherit;
+    color: #FFFFFF;
+}
+.header-tel__mail {
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    justify-content: space-between;
+}
+/* footer */
+.footer {
+    min-height: 390px;
+    background-color: #272727;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-item__nav {
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+}
+.footer-nav {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-link  {
+    justify-content: space-around;
+}
+.footer-tel {
+    flex-direction: column;
+}
+.footer-tel__desc {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-tel__link {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #C2C2C2;
+}
+.footer-network__link {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 0;
+}
+.footer-mail {
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-label {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-link__mail {
+    padding: 15px 0;
+    border-bottom: 1px solid #FFFFFF;
+}
+.footer-shop__imput {
+   background-color: transparent;
+   border: none;
+   color: #FFFFFF;
+}
+@media  (max-width: 1250px) {
+    .tabs__item {
+        width: 100%;
+    }
+    .header-tel__network {
+        margin-bottom: 20px;
+    }
+    .hedear-tel__content {
+        flex-direction: column;
+    }
+    .header-tel__foto  {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .header-tel__phone {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header-tel__link  {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .hedear-tel__mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+}
