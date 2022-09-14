@@ -524,7 +524,7 @@ body {
     font-weight: 400;
     font-size: 64px;
     line-height: 71px;
-    
+    margin-bottom: 20px;
     letter-spacing: 0.03em;
     color: #272727;
 }
@@ -534,27 +534,35 @@ body {
     height: 2px;
     background-color: #272727;
     margin-right: 10px;
+    
 }
 .main-content__left-colection {
-        font-family: 'Segoe UI';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 24px;
-       
-        color: #272727;
+    display: flex;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    justify-content: flex-end;
+    color: #272727;
+    margin-left: 100px;
+    cursor: pointer;
 }
 .img-ring {
     display: flex;
     position: sticky;
-    left: 75%;
-    right: -150px;
+    left: 0%;
     background: inherit;
     width: 322px;
     height: 170px;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    transition: all 1s ease 0s;
+    transform: translateX(-85%);
+}
+.img-ring:hover {
+    transform: translateX(-50%);
 }
 .main-content__right-desc {
     flex-direction: column;
